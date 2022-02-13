@@ -10,7 +10,7 @@ class Solution:
                 nums[place_ind], nums[i] = nums[i], nums[place_ind]
                 place_ind -= 1
         print(nums)
-        return len(nums)-nums.count(val)
+        return place_ind+1 #len(nums)-nums.count(val)
 
 solution = Solution()
 print(solution.removeElement([0,1,2,2,3,0,4,2], 2))
